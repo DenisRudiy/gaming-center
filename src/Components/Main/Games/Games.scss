@@ -1,0 +1,12 @@
+.Games {
+  @apply flex justify-end;
+  margin-top: 68px;
+  height: 24vh;
+  background-color: rgb(91, 101, 92);
+
+  .Promo {
+    width: 33vw;
+    height: 53vh;
+    background-color: white;
+  }
+}
