@@ -1,7 +1,82 @@
 .Friends {
-  width: 4.7vw;
+  @apply flex items-center flex-col;
+  gap: 30px;
+  width: 3.5vw;
   min-width: 90px;
-  height: 59vh;
+  height: 53vh;
   background-color: #00453f;
   border-radius: 40px;
+  padding: 19px 15px 19px 15px;
+
+  .MainAvatar {
+    width: 82px;
+    height: 82px;
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+  .MainAvatar:hover {
+    transform: scale(1.05);
+  }
+
+  .circle {
+    width: 64px;
+    height: 64px;
+    // background-color: #3498db;
+    border-radius: 50%;
+    position: relative;
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+  }
+
+  .notchActivated {
+    width: 25px;
+    height: 25px;
+    background-color: #0cde3a;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    border-radius: 50%;
+  }
+  .notchDisabled {
+    width: 25px;
+    height: 25px;
+    background-color: #a5baa9;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    border-radius: 50%;
+  }
+  .InGame {
+    @apply flex items-center justify-center;
+    width: 64px;
+    height: 22px;
+    font-size: 12px;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #3dbda7;
+    position: absolute;
+    top: 54px;
+    border-radius: 6px;
+    transition: 0.3s all;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .InGame:hover {
+    transform: scale(1.05);
+  }
+  .InGame:active {
+    transform: translateY(5px);
+  }
 }
