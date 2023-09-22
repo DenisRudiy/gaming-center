@@ -1,8 +1,100 @@
 .Chats {
+  @apply flex items-center flex-col;
+  gap: 30px;
   width: 3.5vw;
   min-width: 90px;
   height: 34vh;
   background-color: #00453f;
   border-radius: 40px;
   padding: 19px 15px 19px 15px;
+
+  .ChatBtn {
+    @apply flex items-center justify-center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 65px;
+    height: 65px;
+    transition: 0.3s all;
+    cursor: pointer;
+    img {
+      width: 35px;
+      height: auto;
+    }
+  }
+  .ChatBtn:hover {
+    background-color: #022c29;
+    box-shadow: rgba(1, 44, 39, 1) 0px 5px 15px;
+  }
+  .ChatBtn:active {
+    transform: translateY(20px);
+  }
+
+  .circle {
+    width: 64px;
+    height: 64px;
+    // background-color: #3498db;
+    border-radius: 50%;
+    position: relative;
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+  }
+  .notchActivated {
+    @apply flex justify-center items-center;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    width: 25px;
+    height: 25px;
+    background-color: #0cde3a;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    border-radius: 50%;
+  }
+  .notchDisabled {
+    width: 25px;
+    height: 25px;
+    background-color: #a5baa9;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    border-radius: 50%;
+  }
+  .InGame {
+    @apply flex items-center justify-center;
+    width: 64px;
+    height: 22px;
+    font-size: 12px;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #3dbda7;
+    position: absolute;
+    top: 54px;
+    border-radius: 6px;
+    transition: 0.3s all;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .InGame:hover {
+    transform: scale(1.05);
+  }
+  .InGame:active {
+    transform: translateY(5px);
+  }
 }

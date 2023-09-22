@@ -22,7 +22,7 @@ export function Friends() {
       </div>
       <div className="circle">
         <img src="https://i.postimg.cc/Jz1BHG7s/7309670.jpg" alt="" />
-        <div className="notchDisabled"></div>
+        <div className="notchActivated"></div>
       </div>
       <div className="circle">
         <img src="https://i.postimg.cc/Kv7MYnbX/7309675.jpg" alt="" />
