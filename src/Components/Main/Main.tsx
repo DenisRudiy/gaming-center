@@ -8,8 +8,8 @@ import { Search } from "./Search/Search";
 export function Main() {
   return (
     <div className="Main">
-      {/* <Search />
-      <Header />
+      <Search />
+      {/* <Header />
       <Games />
       <Downloads /> */}
     </div>

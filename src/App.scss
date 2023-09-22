@@ -1,7 +1,7 @@
 .App {
   width: calc(100% - 64px);
   height: calc(100vh - 64px);
-  background-color: #1d1e22;
+  background: linear-gradient(120deg, #232323, #0f0d0d 90.71%);
   padding: 32px;
   color: white;
   @apply flex;
