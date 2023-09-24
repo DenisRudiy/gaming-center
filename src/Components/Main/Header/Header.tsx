@@ -53,9 +53,46 @@ export function Header() {
         </div>
       </div>
       <div className="Owned">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="Games">
+          <div className="LogoBlock">
+            <img src="https://i.postimg.cc/cCzdfg2p/image-46-1.png" alt="" />
+            <div>
+              <p className="Name">LEAP</p>
+              <p className="Info">Ps5 & xbox & PC</p>
+            </div>
+          </div>
+
+          <button>
+            <img src="https://i.postimg.cc/zDQLCVCD/arrow-down.png" alt="" />
+          </button>
+        </div>
+        <div className="Games">
+          <div className="LogoBlock">
+            <img src="https://i.postimg.cc/h4ZDk6v2/image-26.png" alt="" />
+            <div>
+              <p className="Name">Space Marine</p>
+              <p className="Info">Ps5 & xbox & PC</p>
+            </div>
+          </div>
+          <button>
+            <img src="https://i.postimg.cc/zDQLCVCD/arrow-down.png" alt="" />
+          </button>
+        </div>
+        <div className="Games">
+          <div className="LogoBlock">
+            <img
+              src="https://i.postimg.cc/VLSfmgbm/wp1811273-the-last-of-us-wallpapers-1.png"
+              alt=""
+            />
+            <div>
+              <p className="Name">Red for dead</p>
+              <p className="Info">Ps5 & xbox & PC</p>
+            </div>
+          </div>
+          <button>
+            <img src="https://i.postimg.cc/zDQLCVCD/arrow-down.png" alt="" />
+          </button>
+        </div>
       </div>
     </div>
   );
