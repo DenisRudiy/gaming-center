@@ -9,8 +9,8 @@ export function Main() {
   return (
     <div className="Main">
       <Search />
-      {/* <Header />
-      <Games />
+      <Header />
+      {/* <Games />
       <Downloads /> */}
     </div>
   );

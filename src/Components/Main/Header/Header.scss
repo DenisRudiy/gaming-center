@@ -1,5 +1,145 @@
 .Header {
-  height: 350px;
-  background-color: rgb(99, 85, 85);
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 360px;
   margin-top: 83px;
+
+  .Popular {
+    background-image: radial-gradient(
+      107.86% 131.12% at 50% 33.75%,
+      #7be8d5 3.95%,
+      #00544c 59.04%,
+      #92fffd 85.27%
+    );
+    border-radius: 40px;
+    margin: 25px;
+    overflow: hidden;
+    position: relative;
+
+    z-index: 2;
+
+    .Background {
+      height: 350px;
+      width: 100%;
+      background-image: url(https://i.postimg.cc/25zYkgfv/image-48-1.png);
+      background-size: 800px;
+      background-repeat: no-repeat;
+      background-position-y: -100px;
+      z-index: 3;
+      padding: 20px;
+      display: flex;
+
+      div {
+        .Btns {
+          @apply flex items-center;
+          gap: 8px;
+          .PopularBtn {
+            @apply flex justify-center items-center;
+            background-color: #3dbda7;
+            border: none;
+            outline: none;
+            width: 112px;
+            height: 40px;
+            color: #393939;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 72px;
+            transition: 0.3s all;
+          }
+          .PopularBtn:hover {
+            box-shadow: rgba(1, 44, 39, 1) 0px 5px 15px;
+          }
+          .PopularBtn:active {
+            transform: translateY(10px);
+          }
+          button {
+            @apply flex justify-center items-center;
+            background-color: #1d1e22;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            width: 30px;
+            height: 30px;
+            transition: 0.3s all;
+            cursor: pointer;
+          }
+          button:hover {
+            transform: scale(1.05);
+          }
+          button:active {
+            transform: translateY(10px);
+          }
+        }
+        .Details {
+          width: 45%;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+        }
+        .DownImages {
+          padding-top: 10px;
+          .Images {
+            @apply flex relative;
+
+            img {
+              position: absolute;
+              height: 40px;
+              width: 40px;
+              transition: 0.3s all;
+              cursor: pointer;
+              border-radius: 50%;
+              border: 3px solid rgba(0, 0, 0, 0);
+            }
+            img:nth-child(2) {
+              left: 25px;
+            }
+            img:nth-child(3) {
+              left: 50px;
+            }
+            img:hover {
+              transform: scale(1.05);
+              border: 3px solid #3dbda7;
+              box-shadow: rgba(61, 189, 167, 1) 0px 5px 15px;
+            }
+            img:active {
+              transform: translateY(10px);
+            }
+          }
+          button {
+            @apply flex justify-center items-center;
+            margin-top: 3px;
+            margin-left: 100px;
+            width: 150px;
+            height: 40px;
+            border-radius: 44px;
+            border: none;
+            outline: none;
+            color: #00453f;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            cursor: pointer;
+            transition: 0.3s all;
+          }
+          button:hover {
+            transform: scale(1.05);
+            box-shadow: rgba(1, 44, 39, 1) 0px 5px 15px;
+          }
+          button:active {
+            transform: translateY(10px);
+          }
+        }
+      }
+      .RightPart {
+        position: absolute;
+        margin-left: 592px;
+        margin-top: -80px;
+      }
+    }
+  }
+  .Owned {
+    background-color: rgb(117, 188, 117);
+    border-radius: 40px;
+    margin: 25px;
+    padding: 25px;
+  }
 }
