@@ -10,8 +10,8 @@ export function Main() {
     <div className="Main">
       <Search />
       <Header />
-      {/* <Games />
-      <Downloads /> */}
+      <Games />
+      {/* <Downloads /> */}
     </div>
   );
 }

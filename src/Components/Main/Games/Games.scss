@@ -1,12 +1,133 @@
 .Games {
-  @apply flex justify-end;
-  margin-top: 68px;
+  @apply flex justify-between;
+  padding-top: 68px;
   height: 24vh;
-  background-color: rgb(91, 101, 92);
+  // background-color: rgb(91,101, 92);
+
+  .List {
+    @apply flex items-center;
+    gap: 35px;
+    padding-left: 50px;
+    .Block {
+      width: 350px;
+      height: 350px;
+      // background-color: red;
+      border-radius: 50px;
+      transition: 0.5s all;
+      cursor: pointer;
+      position: inherit;
+
+      .Overlay {
+        position: absolute;
+        background-color: rgba(1, 23, 21, 0);
+        width: 350px;
+        height: 350px;
+        border-radius: 50px;
+        transition: 0.3s all;
+        z-index: 2;
+        border: 3px solid none;
+        overflow: hidden;
+
+        .BtnsSection {
+          @apply flex justify-between;
+          margin: 20px;
+          opacity: 0;
+          transition: 0.5s all;
+          button {
+            @apply flex justify-center items-center;
+            outline: none;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: 0.5s all;
+            cursor: pointer;
+            transition: 0.3s all;
+
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .Play {
+            background-color: #3dbda7;
+          }
+          .Buy {
+            background-color: #ffffff;
+          }
+          .Play:hover {
+            transform: scale(1.05);
+            box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+          }
+          .Buy:hover {
+            transform: scale(1.05);
+            box-shadow: rgba(61, 189, 167, 1) 0px 5px 15px;
+          }
+          .Buy:active,
+          .Play:active {
+            transform: translateY(20px);
+          }
+        }
+
+        h2 {
+          margin-left: 20px;
+          margin-top: 220px;
+          transition: 0.5s all;
+        }
+        .InfoSection {
+          margin: 20px;
+          p {
+            width: 90%;
+            display: none;
+            transition: 0.5s all;
+          }
+        }
+      }
+
+      .Overlay:hover {
+        background-color: rgba(1, 23, 21, 0.4);
+        border: 3px solid #5c9a94;
+      }
+      .Overlay:hover .BtnsSection {
+        opacity: 1;
+      }
+      .Overlay:hover h2 {
+        margin-top: 80px;
+      }
+      .Overlay:hover .InfoSection p {
+        display: block;
+      }
+
+      .show {
+        background-color: rgba(1, 23, 21, 0.4);
+      }
+
+      .Info {
+        position: absolute;
+        z-index: 3;
+      }
+
+      img {
+        position: absolute;
+        z-index: 1;
+        width: 350px;
+        height: 350px;
+        border-radius: 50px;
+        opacity: 0.7;
+      }
+    }
+    .Block:hover {
+      transform: rotate(-10deg);
+    }
+  }
 
   .Promo {
-    width: 33vw;
-    height: 53vh;
+    position: absolute;
+    margin-top: -17px;
+    right: 200px;
+    width: 600px;
+    height: 680px;
     background-color: white;
+    z-index: 10;
   }
 }
