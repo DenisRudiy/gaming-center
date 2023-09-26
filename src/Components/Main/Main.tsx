@@ -11,7 +11,7 @@ export function Main() {
       <Search />
       <Header />
       <Games />
-      {/* <Downloads /> */}
+      <Downloads />
     </div>
   );
 }
