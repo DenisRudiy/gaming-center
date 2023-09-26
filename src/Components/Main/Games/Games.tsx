@@ -89,7 +89,31 @@ export function Games() {
           <img src="https://i.ibb.co/16xDdPX/image-1-1.png" alt="" />
         </div>
       </div>
-      <div className="Promo"></div>
+      <div className="Promo">
+        <div className="Kratos">
+          <div className="KratosDetails">
+            <h3>Top Weekend</h3>
+            <h2>Kratos</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+              cum nisi deserunt, id minima.
+            </p>
+            <div className="PriceBtn">
+              <h2>Price: 30$</h2>
+              <button>
+                <img
+                  src="https://i.postimg.cc/50L5Qgsr/shopping-cart.png"
+                  alt=""
+                />
+                Add to cart
+              </button>
+            </div>
+            <div className="Diogramm">
+              <img src="https://i.postimg.cc/XNTJz379/Radar.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

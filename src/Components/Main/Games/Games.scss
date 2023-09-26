@@ -2,16 +2,14 @@
   @apply flex justify-between;
   padding-top: 68px;
   height: 24vh;
-  // background-color: rgb(91,101, 92);
 
   .List {
     @apply flex items-center;
-    gap: 35px;
+    gap: 25px;
     padding-left: 50px;
     .Block {
       width: 350px;
       height: 350px;
-      // background-color: red;
       border-radius: 50px;
       transition: 0.5s all;
       cursor: pointer;
@@ -117,7 +115,7 @@
       }
     }
     .Block:hover {
-      transform: rotate(-10deg);
+      transform: rotate(-5deg);
     }
   }
 
@@ -127,7 +125,66 @@
     right: 200px;
     width: 600px;
     height: 680px;
-    background-color: white;
+    background-image: radial-gradient(
+      107.86% 131.12% at 50% 33.75%,
+      #7be8d5 3.95%,
+      #00544c 59.04%,
+      #92fffd 120.27%
+    );
     z-index: 10;
+    border-radius: 40px;
+
+    .Kratos {
+      width: 600px;
+      height: 680px;
+      position: absolute;
+      background-image: url(https://i.postimg.cc/0jDGTngv/fortnite-outfit-kratos-1-768x803-1.png);
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+      background-position-y: 65px;
+
+      .KratosDetails {
+        margin: 30px;
+        h2 {
+          margin: 5px 0px;
+        }
+        h3 {
+          margin: 5px 0px;
+          color: #d0d0d0;
+        }
+        p {
+          width: 310px;
+        }
+
+        .PriceBtn {
+          margin-top: 80px;
+
+          button {
+            @apply flex  justify-center items-center;
+            gap: 10px;
+            width: 130px;
+            height: 40px;
+            font-weight: 700;
+            outline: none;
+            border: none;
+            background-color: white;
+            border-radius: 72px;
+            color: 393939;
+            transition: 0.3s all;
+            cursor: pointer;
+          }
+          button:hover {
+            transform: scale(1.05);
+          }
+          button:active {
+            transform: translateY(20px);
+          }
+        }
+
+        .Diogramm {
+          margin-top: 50px;
+        }
+      }
+    }
   }
 }
